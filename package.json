@@ -1,0 +1,33 @@
+{
+  "name": "input-mask",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "clean": "rm dist/bundle.js",
+    "start": "parcel src/index.html",
+    "build-prod": "parcel build src/index.html"
+  },
+  "dependencies": {
+    "@maskito/core": "^3.2.0",
+    "@maskito/phone": "^3.2.0",
+    "@maskito/react": "^3.2.0",
+    "imask": "^7.6.1",
+    "libphonenumber-js": "^1.11.14",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-imask": "^7.6.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@babel/preset-env": "^7.25.4",
+    "@babel/preset-react": "^7.24.7",
+    "eslint": "^9.10.0",
+    "eslint-plugin-react": "^7.36.1",
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.80.6"
+  }
+}

@@ -1,0 +1,20 @@
+.Input {
+  width: 320px;
+  padding: 8px 16px;
+  border: 1px solid #121212;
+  border-radius: 8px;
+  height: 48px;
+  font-size: 16px;
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+
+.placeholder {
+  &::placeholder {
+    font-size: 20px;
+    color: black;
+    opacity: 1;
+  }
+}
