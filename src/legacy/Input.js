@@ -64,6 +64,7 @@ export const Input = ({ value: stateValue, onChange, ...props }) => {
       onChange={handleChange}
       placeholder="+7 (000) 000-00-00"
       onKeyDown={keydownHandler}
+      autoComplete="off"
     />
   );
 };

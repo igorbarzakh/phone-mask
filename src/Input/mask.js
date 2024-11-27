@@ -5,27 +5,35 @@ import {
   maskitoRemoveOnBlurPlugin,
 } from '@maskito/kit';
 
+import { MASKITO_DEFAULT_OPTIONS } from '@maskito/core';
+const MASK_SYMBOLS = /[ \-_()]/g;
+function isText(value) {
+  return Number.isNaN(parseInt(value.replaceAll(MASK_SYMBOLS, ''), 10));
+}
+
+const mask = [
+  '+',
+  '7',
+  ' ',
+  '(',
+  /\d/,
+  /\d/,
+  /\d/,
+  ')',
+  ' ',
+  /\d/,
+  /\d/,
+  /\d/,
+  '-',
+  /\d/,
+  /\d/,
+  '-',
+  /\d/,
+  /\d/,
+];
+
 export default {
-  mask: [
-    '+',
-    '7',
-    ' ',
-    '(',
-    /\d/,
-    /\d/,
-    /\d/,
-    ')',
-    ' ',
-    /\d/,
-    /\d/,
-    /\d/,
-    '-',
-    /\d/,
-    /\d/,
-    '-',
-    /\d/,
-    /\d/,
-  ],
+  mask: mask,
   postprocessors: [
     // non-removable country prefix
     maskitoPrefixPostprocessorGenerator('+7 '),
