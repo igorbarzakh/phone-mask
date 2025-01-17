@@ -33,7 +33,7 @@ export const MaskitoInput = ({ onChange, ...props }) => {
       name="phone"
       type="tel"
       inputMode="tel"
-      placeholder="+7 (000) 000-00-00"
+      placeholder="+7 (000) 000-00-01"
       onInput={handleChange}
     />
   );
