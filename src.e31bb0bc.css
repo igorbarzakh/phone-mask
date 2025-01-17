@@ -1,3 +1,20 @@
+.Input {
+  width: 320px;
+  padding: 8px 16px;
+  border: 1px solid #121212;
+  border-radius: 8px;
+  height: 48px;
+  font-size: 16px;
+}
+.Input:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.placeholder::placeholder {
+  font-size: 20px;
+  color: black;
+  opacity: 1;
+}
 *,
 *:before,
 *:after {
@@ -6,9 +23,9 @@
 
 html,
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
-    Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
+
 body {
   text-align: center;
 }
@@ -37,3 +54,5 @@ button {
   background-color: tomato;
   color: white;
 }
+
+/*# sourceMappingURL=/src.e31bb0bc.css.map */
