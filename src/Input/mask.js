@@ -33,6 +33,7 @@ const mask = [
 ];
 
 export default {
+  ...MASKITO_DEFAULT_OPTIONS,
   mask: mask,
   postprocessors: [
     // non-removable country prefix
@@ -59,7 +60,7 @@ function createCompletePhoneInsertionPreprocessor() {
     return {
       elementState: {
         selection,
-        value: countDigits(value) > 11 ? trimPrefix(value) : value,
+        value: countDigits(value) >= 11 ? trimPrefix(value) : value,
       },
       data: countDigits(data) >= 11 ? trimPrefix(data) : data,
     };
